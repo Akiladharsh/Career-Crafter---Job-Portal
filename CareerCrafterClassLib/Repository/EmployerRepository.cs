@@ -150,6 +150,9 @@ public class EmployerRepository : IEmployerRepository
         if (!string.IsNullOrEmpty(employerDto.PhoneNo))
             employer.PhoneNo = employerDto.PhoneNo;
 
+        ////if (!string.IsNullOrEmpty(employerDto.Email))
+        ////    employer.Email = employerDto.Email;
+
         _context.Employers.Update(employer);
         await _context.SaveChangesAsync();
         return true;
