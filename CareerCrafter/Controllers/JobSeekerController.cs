@@ -15,7 +15,7 @@ namespace CareerCrafter.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-   //[Authorize]
+   [Authorize]
     public class JobSeekerController : ControllerBase
     {
         private readonly AppDbContext _context;
